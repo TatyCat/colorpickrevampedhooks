@@ -9,25 +9,6 @@ export default function Main(props) {
 
   //Saved Colors
   const [savedColorClicked, setSavedColorClicked] = useState([])
-  console.log(savedColorClicked)
-
-  //Display Saved Colors
-
-
-
-  // cosnt [] = useState()
-  // cosnt [] = useState()
-
-  // updateHue = (event) => {
-  //   this.setState({
-  //     hue: Number(event.target.value)
-  //   })
-  // }
-  // const saveColor = () => {
-  //     this.setState({
-  //       savedColors: this.state.savedColors.concat(`hsla(${this.state.hue}, ${this.state.saturation}%, ${this.state.lightness}%, ${this.state.alpha})`)
-  //     })
-  //   }
 
   let selectText = event => {
     console.log(event.target.innerText)
