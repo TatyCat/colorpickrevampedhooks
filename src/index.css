@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Lato:700');
 :root {
-  font: 16px / 1 sans-serif;
+  font: 16px / 1 'Arvo', serif;
 }
 
 html {
@@ -9,4 +10,223 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+}
+
+/* Header */
+
+header {
+  background-color: #f7f7f6;
+  font-size: calc(1.5vh + 1.5vw);
+  font-family: 'Lato', 'Arvo', serif;
+  border-bottom: solid 2px rgb(246, 246, 244);
+}
+
+h1 {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  text-shadow: rgb(116, 116, 116) -1px .5px .5px;
+  letter-spacing: .3ch;
+  word-spacing: .5ch;
+}
+
+/* Slide/Main */
+
+.slidecontainer {
+  width: 100%;
+}
+
+#slider-results {
+  font-size: calc(1.5vh + 1.5vw);
+  white-space: nowrap;
+  text-align: center;
+}
+
+#slider-results:hover {
+  color: rgb(49, 49, 65);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  /* Specific width is required for Firefox. */
+  background: transparent;
+  /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #262626;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #262626;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #262626;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #dedcdc;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #dedcdc;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #dedcdc;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #dedcdc;
+}
+
+input[type=range]:hover {
+  opacity: .87;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+#color-results {
+  padding: 9vh;
+  margin-bottom: 2rem;
+  border: solid 2px rgb(246, 246, 244);
+}
+
+article button {
+  display: block;
+  margin: 2rem auto;
+  margin-bottom: 9vh;
+  padding: .5rem .8rem;
+  background-color: white;
+  border-radius: 2px;
+  border: none;
+  color: rgb(18, 18, 18);
+  text-shadow: rgb(67, 67, 67) .5px .5px .5px;
+  cursor: pointer;
+  transition: opacity 0s;
+  font-size: calc(1.1vh + 1.1vw);
+}
+
+article button:active {
+  opacity: 0.67;
+}
+
+article {
+  margin: 2rem;
+}
+
+.saved-color {
+  border: solid 2px rgb(246, 246, 244);
+  border-radius: 2px;
+  padding: 1vh 20vw;
+}
+
+ul {
+  padding: 0;
+  font-size: calc(1.7vw + .9vh);
+  white-space: nowrap;
+}
+
+li {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+  padding: .3rem 2rem;
+  margin-right: 1vh;
+}
+
+ul li {
+  list-style: none;
+}
+
+main {
+  margin-bottom: 1vh;
 }
