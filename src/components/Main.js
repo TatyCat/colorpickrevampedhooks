@@ -16,6 +16,13 @@ export default function Main(props) {
     document.execCommand("copy")
   }
 
+  const colorGenerator = () => {
+    setHue(Math.floor(Math.random() * 240))
+    setSaturation(Math.floor(Math.random() * 100))
+    setLightness(Math.floor(Math.random() * 100))
+    setAlpha(Math.random().toFixed(2))
+  }
+
   return (
     <>
       <main>
@@ -65,7 +72,7 @@ export default function Main(props) {
               })}
             </div>
 
-            <button style={{ color: `hsla(${hue}, ${saturation}%, ${lightness}%, ${alpha})` }}>Give Me a Random Color</button>
+            <button onClick={colorGenerator} style={{ color: `hsla(${hue}, ${saturation}%, ${lightness}%, ${alpha})` }}>Give Me a Random Color</button>
           </section>
         </article>
         <footer></footer>
