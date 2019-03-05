@@ -64,6 +64,8 @@ export default function Main(props) {
                 )
               })}
             </div>
+
+            <button style={{ color: `hsla(${hue}, ${saturation}%, ${lightness}%, ${alpha})` }}>Give Me a Random Color</button>
           </section>
         </article>
         <footer></footer>
