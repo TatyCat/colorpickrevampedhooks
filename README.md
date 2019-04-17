@@ -14,4 +14,4 @@ HTML,
 CSS
 
 ## Preview:
-![Preview](build/static/images/rhookspicker.gif)
+![Preview]('build/static/images/rhookspicker.gif')
