@@ -14,4 +14,4 @@ HTML,
 CSS
 
 ## Preview:
-![Preview](/build/static/images/rhookspicker.gif)
+![alt text][preview](/build/static/images/rhookspicker.gif "Preview of the RHooks App")
