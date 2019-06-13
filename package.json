@@ -25,6 +25,7 @@
     "json": "^9.0.6",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-scripts": "^2.1.5"
+    "react-scripts": "^2.1.5",
+    "yarn.lock": "^0.0.1-security"
   }
 }

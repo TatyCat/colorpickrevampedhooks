@@ -32,6 +32,10 @@ h1 {
 
 /* Slide/Main */
 
+main {
+  margin-bottom: 1vh;
+}
+
 .slidecontainer {
   width: 100%;
 }
@@ -213,20 +217,15 @@ ul {
   padding: 0;
   font-size: calc(1.7vw + .9vh);
   white-space: nowrap;
+  /* display: flex; */
+  justify-content: space-around;
 }
 
 li {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: left;
   padding: .3rem 2rem;
-  margin-right: 1vh;
-}
-
-ul li {
   list-style: none;
 }
 
-main {
-  margin-bottom: 1vh;
+li div {
+  margin: .7vh 0;
 }

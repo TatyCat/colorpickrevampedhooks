@@ -65,13 +65,12 @@ export default function Main(props) {
               {savedColorClicked.map((hsla, index) => {
                 return (
                   <ul key={index}>
-                    <li >{hsla} <span className="saved-color" style={{ backgroundColor: `${hsla}` }}></span>
+                    <li >{hsla} <div className="saved-color" style={{ backgroundColor: `${hsla}` }}></div>
                     </li>
                   </ul>
                 )
               })}
             </div>
-
             <button onClick={colorGenerator} style={{ color: `hsla(${hue}, ${saturation}%, ${lightness}%, ${alpha})` }}>Give Me a Random Color</button>
           </section>
         </article>
